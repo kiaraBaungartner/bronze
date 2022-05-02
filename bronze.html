@@ -1,0 +1,297 @@
+<html>
+    <head>
+        <title>Bronze Lung</title>
+    </head>
+    <body>
+
+        <div style="border:4px solid black; width: 398px; height: 300px; display: flex;" >
+        <div> 
+
+        <div id="4" style="border:1px solid black; width:100px; height: 100px;">
+            <center>
+            <button type="button" id="mais" onclick="subir()"  style="margin-top: 15px;">+</button>
+            <br>
+            <button type="button" id="mais" onclick="desce()" >-</button>
+            </center>
+        </div>    
+        
+
+
+        <div id="1" style="border:1px solid black; width:100px; height: 100px;">
+        <p style="text-align: center;">Angulo:</p>
+        <p id="demo" style="text-align: center;">Norte</p>
+        </div>
+
+
+
+        <div id="3" style="border:1px solid black; width:100px; height: 96px;">
+            <center>
+            <button type="button" id="menos" onclick="menos()" style="margin-top: 15px;"> <= </button>
+            <button type="button" id="mais" onclick="mais()" > => </button>
+            <br>
+            
+            </center>
+        </div>
+
+        
+    </div>   
+        <div id="2" style="border:1px solid black; width:300px; height:300px; ">
+        <table>
+                <tr id="tr1">
+                    <td id="td11" class="quadradinho" style="background-color: red;"></td> <td id="td21"  class="quadradinho"></td> 
+                    <td id="td31" class="quadradinho"></td>  <td id="td41"  class="quadradinho"></td>
+                    <td id="td51" class="quadradinho"></td>  <td id="td61"  class="quadradinho"></td>
+                    <td id="td71" class="quadradinho"></td>  <td id="td81"  class="quadradinho"></td>
+                    <td id="td91" class="quadradinho"></td>  <td id="td101" class="quadradinho"></td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td12" class="quadradinho"></td>  <td id="td22"  class="quadradinho"></td> 
+                    <td id="td32" class="quadradinho"></td>  <td id="td42"  class="quadradinho"></td>
+                    <td id="td52" class="quadradinho"></td>  <td id="td62"  class="quadradinho"></td>
+                    <td id="td72" class="quadradinho"></td>  <td id="td82"  class="quadradinho"></td>
+                    <td id="td92" class="quadradinho"></td>  <td id="td102" class="quadradinho"></td>
+                </tr>
+                <tr id="tr3">
+                    <td id="td13" class="quadradinho"></td>  <td id="td23"  class="quadradinho"></td> 
+                    <td id="td33" class="quadradinho"></td>  <td id="td43"  class="quadradinho"></td>
+                    <td id="td53" class="quadradinho"></td>  <td id="td63"  class="quadradinho"></td>
+                    <td id="td73" class="quadradinho"></td>  <td id="td83"  class="quadradinho"></td>
+                    <td id="td93" class="quadradinho"></td>  <td id="td103" class="quadradinho"></td>
+                </tr>
+                <tr id="tr4">
+                    <td id="td14" class="quadradinho"></td>  <td id="td24"  class="quadradinho"></td> 
+                    <td id="td34" class="quadradinho"></td>  <td id="td44"  class="quadradinho"></td>
+                    <td id="td54" class="quadradinho"></td>  <td id="td64"  class="quadradinho"></td>
+                    <td id="td74" class="quadradinho"></td>  <td id="td84"  class="quadradinho"></td>
+                    <td id="td94" class="quadradinho"></td>  <td id="td104" class="quadradinho"></td>
+                </tr>
+                <tr id="tr5">
+                    <td id="td15" class="quadradinho"></td>  <td id="td25"  class="quadradinho"></td> 
+                    <td id="td35" class="quadradinho"></td>  <td id="td45"  class="quadradinho"></td>
+                    <td id="td55" class="quadradinho"></td>  <td id="td65"  class="quadradinho"></td>
+                    <td id="td75" class="quadradinho"></td>  <td id="td85"  class="quadradinho"></td>
+                    <td id="td95" class="quadradinho"></td>  <td id="td105" class="quadradinho"></td>
+                </tr>
+                <tr id="tr6">
+                    <td id="td16" class="quadradinho"></td>  <td id="td26"  class="quadradinho"></td> 
+                    <td id="td36" class="quadradinho"></td>  <td id="td46"  class="quadradinho"></td>
+                    <td id="td56" class="quadradinho"></td>  <td id="td66"  class="quadradinho"></td>
+                    <td id="td76" class="quadradinho"></td>  <td id="td86"  class="quadradinho"></td>
+                    <td id="td96" class="quadradinho"></td>  <td id="td106" class="quadradinho"></td>
+                </tr>
+                <tr id="tr7">
+                    <td id="td17" class="quadradinho"></td>  <td id="td27"  class="quadradinho"></td> 
+                    <td id="td37" class="quadradinho"></td>  <td id="td47"  class="quadradinho"></td>
+                    <td id="td57" class="quadradinho"></td>  <td id="td67"  class="quadradinho"></td>
+                    <td id="td77" class="quadradinho"></td>  <td id="td87"  class="quadradinho"></td>
+                    <td id="td97" class="quadradinho"></td>  <td id="td107" class="quadradinho"></td>
+                </tr>
+                <tr id="tr8">
+                    <td id="td18" class="quadradinho"></td>  <td id="td28"  class="quadradinho"></td> 
+                    <td id="td38" class="quadradinho"></td>  <td id="td48"  class="quadradinho"></td>
+                    <td id="td58" class="quadradinho"></td>  <td id="td68"  class="quadradinho"></td>
+                    <td id="td78" class="quadradinho"></td>  <td id="td88"  class="quadradinho"></td>
+                    <td id="td98" class="quadradinho"></td>  <td id="td108" class="quadradinho"></td>
+                </tr>
+                <tr id="tr9">
+                    <td id="td19" class="quadradinho"></td>  <td id="td29"  class="quadradinho"></td> 
+                    <td id="td39" class="quadradinho"></td>  <td id="td49"  class="quadradinho"></td>
+                    <td id="td59" class="quadradinho"></td>  <td id="td69"  class="quadradinho"></td>
+                    <td id="td79" class="quadradinho"></td>  <td id="td89"  class="quadradinho"></td>
+                    <td id="td99" class="quadradinho"></td>  <td id="td109" class="quadradinho"></td>
+                </tr>
+                <tr id="tr10">
+                    <td id="td110" class="quadradinho"></td>  <td id="td210"  class="quadradinho"></td> 
+                    <td id="td310" class="quadradinho"></td>  <td id="td410"  class="quadradinho"></td>
+                    <td id="td510" class="quadradinho"></td>  <td id="td610"  class="quadradinho"></td>
+                    <td id="td710" class="quadradinho"></td>  <td id="td810"  class="quadradinho"></td>
+                    <td id="td910" class="quadradinho"></td>  <td id="td1010" class="quadradinho"></td>
+                </tr>
+    
+                
+            </table>
+            </div> 
+        </div>
+     
+    
+    </body>
+</html>
+
+
+
+<script>
+
+//Angulo
+
+let ang = 0;
+   
+function mais(){  
+    ang++;
+    if(ang>3){
+    ang=0;
+    }
+    else if(ang<0){
+    ang=3;
+    }
+    posAng();
+    }
+
+function menos(){
+    ang--; 
+    if(ang>3){
+    ang=0;
+    }
+    else if(ang<0){
+    ang=3;
+    }
+    posAng();
+    }
+
+//-Angulo   
+
+//Posição Angulo
+
+function posAng(){
+switch(ang){
+    case 0:
+        document.getElementById("demo").innerHTML = "Norte";
+        break;
+   
+    case 1:
+        document.getElementById("demo").innerHTML = "Leste";
+        break;
+    
+    case 2:
+        document.getElementById("demo").innerHTML = "Sul";
+        break;
+    
+    case 3:
+        document.getElementById("demo").innerHTML = "Oeste"; 
+        break;
+    
+    
+    default:
+        document.getElementById("demo").innerHTML = "Norte";
+}}
+
+//-Posição Angulo
+
+//Botao nav
+
+let X = 1;
+let Y = 1;
+
+function subir(){
+switch(ang){
+    case 0:
+    norte();  
+    break;  
+
+    case 1:
+    leste();  
+    break;  
+    
+    case 2:
+    sul();  
+    break;  
+
+    case 3:
+    oeste();  
+    break; 
+}
+}
+
+function desce(){
+switch(ang){
+    case 0:
+    sul();  
+    break;  
+
+    case 1:
+    oeste();  
+    break;  
+    
+    case 2:
+    norte();  
+    break;  
+
+    case 3:
+    leste();  
+    break; 
+}
+}
+
+function leste() {
+   X++;
+   if(X>10){
+   X = 1;  
+   document.getElementById("td"+10+Y).style.backgroundColor = "aqua";  
+   }
+   if(X<1){
+   X = 10; 
+   document.getElementById("td"+1+Y).style.backgroundColor = "aqua";  
+   }
+   document.getElementById("td"+X+Y).style.backgroundColor = "red";
+   document.getElementById("td"+(X-1)+Y).style.backgroundColor = "aqua"; 
+}  
+function norte() { 
+   Y--;
+   if(Y>10){
+   Y = 1;  
+   document.getElementById("td"+X+10).style.backgroundColor = "aqua"; 
+   }
+   if(Y<1){
+   Y = 10; 
+   document.getElementById("td"+X+1).style.backgroundColor = "aqua";
+   }
+   document.getElementById("td"+X+Y).style.backgroundColor = "red";
+   document.getElementById("td"+X+(Y+1)).style.backgroundColor = "aqua";
+}       
+function oeste() {
+   X--;
+   if(X>10){
+   X = 1;  
+   document.getElementById("td"+10+Y).style.backgroundColor = "aqua";  
+   }
+   if(X<1){
+   X = 10; 
+   document.getElementById("td"+1+Y).style.backgroundColor = "aqua";  
+   }
+   document.getElementById("td"+X+Y).style.backgroundColor = "red";
+   document.getElementById("td"+(X+1)+Y).style.backgroundColor = "aqua"; 
+}
+function sul() {
+   Y++;
+   if(Y>10){
+   Y = 1;  
+   document.getElementById("td"+X+10).style.backgroundColor = "aqua";  
+   }
+   if(Y<1){
+   Y = 10; 
+   document.getElementById("td"+X-1).style.backgroundColor = "aqua";  
+   }
+   document.getElementById("td"+X+Y).style.backgroundColor = "red";
+   document.getElementById("td"+X+(Y-1)).style.backgroundColor = "aqua"; 
+} 
+    
+
+
+
+</script>
+
+<style>
+table{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+}
+tr, td{
+    border: 1px solid;
+
+}
+.quadradinho{
+    background-color: aqua;
+    height: 8px;
+    width: 8px;
+}
+</style>
